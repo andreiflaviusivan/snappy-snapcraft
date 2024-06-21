@@ -1,0 +1,23 @@
+name: snappy-snapcraft
+base: core22
+version: '1.0.0'
+summary: Showcase how to create snaps with snapcraft 
+description: |
+  Demonstration of how to embed regular NodeJS apps into snap packages which can be further published to the Snap store. Please check my blog at https://afivan.com for info
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: strict
+
+apps:
+  snappy:
+    command: bin/snappy
+    plugs:
+      - network-bind
+      - network
+
+parts:
+  snappy:
+    plugin: npm
+    source: .
+    npm-node-version: 20.14.0
+    npm-include-node: true

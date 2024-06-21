@@ -1,0 +1,34 @@
+{
+  "name": "snappy-snapcraft",
+  "version": "1.0.0",
+  "description": "Showcase how to create snaps with snapcraft in various scenarios. Please check my blog at afivan.com for info",
+  "main": "app.js",
+  "bin": {
+    "snappy": "app.js"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreiflaviusivan/snappy-snapcraft.git"
+  },
+  "keywords": [
+    "snap",
+    "snapcraft",
+    "node",
+    "nodejs",
+    "express",
+    "expressjs"
+  ],
+  "author": "Andrei-Flavius IVAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreiflaviusivan/snappy-snapcraft/issues"
+  },
+  "homepage": "https://github.com/andreiflaviusivan/snappy-snapcraft#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
